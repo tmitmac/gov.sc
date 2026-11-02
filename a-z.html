@@ -23,6 +23,28 @@
             box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
             transition: all 0.3s ease;
         }
+        /* Department website links: understated, accessible and clearly clickable. */
+        .department-link {
+            color: #1d4ed8;
+            font-weight: 600;
+            text-decoration: none;
+            text-decoration-color: transparent;
+            text-underline-offset: 4px;
+            transition: color .18s ease, text-decoration-color .18s ease;
+        }
+        .department-link::after {
+            content: "↗";
+            display: inline-block;
+            margin-left: 5px;
+            font-size: .8em;
+            font-weight: 700;
+            vertical-align: 1px;
+            color: #64748b;
+            transition: transform .18s ease, color .18s ease;
+        }
+        .department-link:hover { color: #1e40af; text-decoration: underline; text-decoration-color: currentColor; }
+        .department-link:hover::after { color: #1d4ed8; transform: translate(2px, -2px); }
+        .department-link:focus-visible { outline: 2px solid #2563eb; outline-offset: 3px; border-radius: 2px; }
     </style>
 </head>
 <body class="font-sans bg-gray-50">
@@ -114,7 +136,7 @@
     <div id="A">
       <h2 class="text-2xl font-semibold text-blue-700 mb-3">A</h2>
       <ul class="list-disc list-inside text-gray-800 space-y-1">
-        <li>Academy for Civil Service Excellence</li>
+        <li><a class="department-link" href="https://tmitmac.github.io/civilserviceacademy.gov.sc/" target="_blank" rel="noopener noreferrer" aria-label="">Academy for Civil Service Excellence</a></li>
         <li>Administration for Public Records</li>
         <li>Agency for Advanced Technology and Innovation</li>
         <li>Agricultural Development Corporation</li>
@@ -141,7 +163,7 @@
         <li>Building and Construction Authority</li>
         <li>Bureau of Business Regulation and Compliance</li>
         <li>Bureau of Budget and Management</li>
-        <li>Bureau of Biosecurity and Disease Prevention</li>
+        <li><a class="department-link" href="https://tmitmac.github.io/bbdp.gov.sc/" target="_blank" rel="noopener noreferrer" aria-label="Customs and Border Protection Agency (opens in a new tab)">Bureau of Biosecurity and Disease Prevention</a></li>
       </ul>
     </div>
 
@@ -156,7 +178,7 @@
         <li>Children and Families Department</li>
         <li>Citizens Advice Bureau</li>
         <li>Civil Aviation Authority</li>
-        <li>Civil Defence and Emergency Management Agency</li>
+        <li><a class="department-link" href="https://tmitmac.github.io/cdem.gov.sc/" target="_blank" rel="noopener noreferrer" aria-label="">Civil Defence and Emergency Management Agency</a></li>
         <li>Civil Service Commission</li>
         <li>Climate Change and Environmental Planning Department</li>
         <li>Coastal and Marine Affairs Directorate</li>
@@ -164,13 +186,9 @@
         <li>Community Development Department</li>
         <li>Competition and Consumer Affairs Authority</li> 
         <li>Corrections Service of Square Country</li> 
+        <li><a class="department-link" href="https://tmitmac.github.io/covid19.gov.sc/" target="_blank" rel="noopener noreferrer" aria-label="">COVID-19</a></li>
         <li>Cultural Preservation Bureau</li>
-        <li>Customs and Border Protection Agency -
-          <a href="https://tmitmac.github.io/customs/"
-            class="items-center mt-4 text-blue-600 font-medium hover:underline">View Website
-          </a>
-        </li>
-        </li>         
+        <li><a class="department-link" href="https://tmitmac.github.io/customs.gov.sc/" target="_blank" rel="noopener noreferrer" aria-label="Customs and Border Protection Agency (opens in a new tab)">Customs and Border Protection Agency</a></li>
       </ul>
     </div>
 
@@ -196,11 +214,11 @@
       <ul class="list-disc list-inside text-gray-800 space-y-1">
         <li>Early Childhood Education Directorate</li>
         <li>Eastern Boundaries District Council</li>
-        <li>Eastlake District Council</li>
+        <li><a class="department-link" href="https://tmitmac.github.io/eldc.gov.sc/" target="_blank" rel="noopener noreferrer" aria-label="">Eastlake District Council</a></li>
         <li>Economic Development Board</li>
         <li>Economic Policy and Research Council</li>
         <li>Education Systems and Schools Review Office (ESSRO)</li>
-        <li>Electoral Commission</li>
+        <li><a class="department-link" href="https://tmitmac.github.io/elections.sc/" target="_blank" rel="noopener noreferrer" aria-label="">Electoral Commission</a></li>
         <li>Emergency Medical Services Administration</li>
         <li>Emissions Reduction Authority</li>
         <li>Employment Standards Board</li>
@@ -216,10 +234,7 @@
     <div id="F">
       <h2 class="text-2xl font-semibold text-blue-700 mb-3">F</h2>
       <ul class="list-disc list-inside text-gray-800 space-y-1">
-        <li>Federal Revenue Department -
-          <a href="https://tmitmac.github.io/frd.gov.sc/"
-            class="items-center mt-4 text-blue-600 font-medium hover:underline">View Website
-          </a>
+        <li><a class="department-link" href="https://tmitmac.github.io/frd.gov.sc/" target="_blank" rel="noopener noreferrer" aria-label="Federal Revenue Department (opens in a new tab)">Federal Revenue Department</a></li>
         <li>Film and Broadcasting Commission</li>
         <li>Financial Intelligence Unit</li>
         <li>Fire and Emergency Square Country</li>
@@ -256,7 +271,7 @@
         <li>Homeland Security Office</li>
         <li>Housing and Urban Development Department</li>
         <li>Human Right Commission</li>
-        <li>Hydrographic Survey Department</li>
+        <li><a class="department-link" href="https://tmitmac.github.io/hsd.gov.sc/" target="_blank" rel="noopener noreferrer" aria-label="">Hydrographic Survey Department</a></li>
         <li>Hydrology and Water Research Institute</li>
       </ul>
     </div>
@@ -266,7 +281,7 @@
       <ul class="list-disc list-inside text-gray-800 space-y-1">
         <li>Industrial Safety Authority</li>
         <li>Information and Media Affairs Department</li>
-        <li>Injury Rehabilitation and Compensation Corporation (IRCC)</li>
+        <li><a class="department-link" href="https://tmitmac.github.io/ircc.gov.sc/" target="_blank" rel="noopener noreferrer" aria-label="">Injury Rehabilitation and Compensation Corporation (IRCC)</a></li>
         <li>Innovation and Research Agency</li>
         <li>Institute of Public Administration</li>
         <li>Insurance and Pensions Authority</li>
@@ -318,16 +333,12 @@
         <li>Microfinance and Cooperative Development Office</li>
         <li>Migration Policy Directorate</li>
         <li>Minerals and Petroleum Resources Department</li>
-        <li>Ministry of Agriculture</li>
+        <li><a class="department-link" href="https://tmitmac.github.io/mafnr.gov.sc/" target="_blank" rel="noopener noreferrer" aria-label="">Ministry for Agriculture, Fisheries, and Natural Resources</a></li>
+        <li><a class="department-link" href="https://tmitmac.github.io/environment.gov.sc/" target="_blank" rel="noopener noreferrer" aria-label="">Ministry for the Environment</a></li>
         <li>Ministry of Defence</li>
-        <li>Ministry of Education -
-          <a href="https://tmitmac.github.io/education.gov.sc/"
-            class="items-center mt-4 text-blue-600 font-medium hover:underline">View Website
-          </a>
-        </li>
-        <li>Ministry for the Environment</li>
-        <li>Ministry of Finance</li>
-        <li>Ministry of Foreign Affairs</li>
+        <li><a class="department-link" href="https://tmitmac.github.io/education.gov.sc" target="_blank" rel="noopener noreferrer" aria-label="Ministry of Education (opens in a new tab)">Ministry of Education</a></li>
+        <li>Ministry of Finance - see <a class="department-link" href="https://tmitmac.github.io/treasury.gov.sc/" target="_blank" rel="noopener noreferrer" aria-label="">Treasury</a></li>
+        <li><a class="department-link" href="https://tmitmac.github.io/mfat.gov.sc/" target="_blank" rel="noopener noreferrer" aria-label="">Ministry of Foreign Affairs</a></li>
         <li>Ministry of Health & Human Services</li>
         <li>Ministry of Immigration</li>
         <li>Ministry of Justice & Corrections</li>
@@ -361,8 +372,8 @@
         <li>National Research Council</li>
         <li>National Space Agency (SCSA)</li>
         <li>National Sports Council</li>
-        <li>National Statistics Office</li>
-        <li>Northern Territories District Council</li>
+        <li><a class="department-link" href="https://tmitmac.github.io/nso.gov.sc/" target="_blank" rel="noopener noreferrer" aria-label="">National Statistics Office</a></li>
+        <li><a class="department-link" href="https://tmitmac.github.io/ntdc.gov.sc/" target="_blank" rel="noopener noreferrer" aria-label="">Northern Territories District Council</a></li>
         <li>Northern Territories Spanish Language Revitalisation Tribunal</li>
         <li>Nuclear Regulation Authority</li>
       </ul>
@@ -398,7 +409,7 @@
         <li>Prison Service</li>
         <li>Procurement and Supply Management Agency</li>
         <li>Productivity and Efficiency Council</li>
-        <li>Property Valuation Office</li>
+        <li><a class="department-link" href="https://tmitmac.github.io/pvo.gov.sc/" target="_blank" rel="noopener noreferrer" aria-label="">Property Valuation Office</a></li>
         <li>Public Service Commission</li>
         <li>Public Works Ministry</li>
       </ul>
@@ -434,9 +445,9 @@
         <li>Securities and Financial Markets Commission</li>
         <li>Small Business Development Agency</li>
         <li>Social Services Ministry</li>
-        <li>Southern Regions District Council</li>
+        <li><a class="department-link" href="https://tmitmac.github.io/srdc.gov.sc/" target="_blank" rel="noopener noreferrer" aria-label="">Southern Regions District Council</a></li>
         <li>Sports and Recreation Authority</li>
-        <li>Square City District Council</li>
+        <li><a class="department-link" href="https://tmitmac.github.io/scdc.gov.sc/" target="_blank" rel="noopener noreferrer" aria-label="">Square Country District Council</a></li>
         <li>Square Country Land Transport Authority</li>
         <li>Square Country Police</li>
         <li>Square Country Qualifications Authority</li> 
@@ -456,7 +467,7 @@
         <li>Trade and Investment Promotion Agency</li>
         <li>Traffic Management Office</li>
         <li>Training and Skills Development Council</li>
-        <li>Treasury Department</li>
+        <li><a class="department-link" href="https://tmitmac.github.io/treasury.gov.sc/" target="_blank" rel="noopener noreferrer" aria-label="">Treasury</a></li>
         <li>Transport Safety Authority</li>
       </ul>
     </div>
@@ -474,7 +485,7 @@
     <div id="V">
       <h2 class="text-2xl font-semibold text-blue-700 mb-3">V</h2>
       <ul class="list-disc list-inside text-gray-800 space-y-1">
-        <li>Vehicle Registration and Licensing Agency of Square Country</li>
+      <li><a class="department-link" href="https://tmitmac.github.io/vrla.gov.sc/" target="_blank" rel="noopener noreferrer" aria-label="">Vehicle Registration and Licencing Agency (VRLA)</a></li>
         <li>Veterans Affairs Department</li>
         <li>Vocational Education and Training Authority</li>
         <li>Voluntary and Nonprofit Organisations Commission</li>
@@ -486,8 +497,7 @@
       <ul class="list-disc list-inside text-gray-800 space-y-1">
         <li>Water and Sanitation Ministry</li>
         <li>Weather and Climate Observatory</li>
-        <li>Western Beaches District Council</li>
-        <li>Wildlife Conservation Agency</li>
+        <li><a class="department-link" href="https://tmitmac.github.io/wca.gov.sc/" target="_blank" rel="noopener noreferrer" aria-label="">Wildlife Conservation Agency</a></li>
         <li>Women's Equality and Empowerment Council</li>
         <li>Workplace Health and Safety Authoriy</li>
       </ul>
@@ -517,13 +527,6 @@
         <li>Zoning and Land Use Commission</li>
       </ul>
     </div>
-
-
-
-
-
-
-    <!-- Continue this format for all letters -->
   </div>
 </section>
 
